@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="app.js"></script>
+    <title>Encriptando texto</title>
+</head>
+<body>
+    <main class="fondo">
+        <div>
+            <div class="card-insert-text">
+                <input type="text" name="texto" id="texto" class="edit-text" placeholder="Ingrese el texto aquí">
+                <div>
+                    <p class="texto-info">Solo letras minúsculas y sin acentos</p>
+                    <div class="orientation-row">
+                        <button class="boton-azul" onclick="encriptarTexto()">Encriptar</button>
+                        <button class="boton-transparente" onclick="desEncriptarTexto()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-result">
+            <p class="texto-encriptado" name="result" id="result"></p>
+            <img src="./img/muneco.svg" alt="imagen del texto sin encriptar" class="img" id="imagen">
+            <h2 class="texto-titulo-card" name="notTextUno" id="notTextUno">Ningún mensaje fue encontrado</h2>
+            <p class="texto-subtitulo-card" name="notTextDos" id="notTextDos">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="boton-transparente" onclick="copyText()">Copiar</button>
+        </div>
+    </main>
+</body>
+</html>
